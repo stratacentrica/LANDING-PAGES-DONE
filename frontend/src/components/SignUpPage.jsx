@@ -96,39 +96,23 @@ const SignUpPage = () => {
 
   return (
     <div className="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
-      {/* Clean CSS Background */}
+      {/* Background with Your Neon Grid */}
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"></div>
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
-              linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-              linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: '50px 50px'
-          }}></div>
-        </div>
+        <img 
+          src="https://customer-assets.emergentagent.com/job_blue-silver-portal/artifacts/gydbclze_StockCake-Neon%20Grid%20Horizon_1744209820.jpg"
+          alt="Neon Grid Background"
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-blue-900/80 to-slate-800/90"></div>
       </div>
 
-      {/* Left Side Hero Section */}
+      {/* Your Digital Gate Hero Image */}
       <div className="absolute left-0 top-0 h-full w-1/2 z-10 hidden lg:block">
-        <div className="w-full h-full bg-gradient-to-r from-blue-900/40 to-slate-800/60 flex items-center justify-center">
-          <div className="text-center text-white">
-            <div className="mb-8 relative">
-              <div className="w-32 h-32 mx-auto bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-2xl">
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-300 to-blue-500 rounded-full flex items-center justify-center">
-                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <Triangle className="w-8 h-8 text-white" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h2 className="text-4xl font-bold mb-4">Digital Gate</h2>
-            <p className="text-xl text-blue-200 max-w-md">
-              Step into the future of digital experiences
-            </p>
-          </div>
-        </div>
+        <img 
+          src="https://customer-assets.emergentagent.com/job_blue-silver-portal/artifacts/9jk9quv8_StockCake-Future%20Meets%20Human_1744201805.jpg"
+          alt="Digital Gate - Future Meets Human"
+          className="w-full h-full object-cover opacity-80"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-900/20 to-slate-900/60"></div>
       </div>
 

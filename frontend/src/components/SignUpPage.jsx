@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Separator } from './ui/separator';
-import { Eye, EyeOff, Mail, User, Lock, Check } from 'lucide-react';
+import { Eye, EyeOff, Mail, User, Lock, Check, Triangle } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
 
 const SignUpPage = () => {
@@ -96,38 +96,52 @@ const SignUpPage = () => {
 
   return (
     <div className="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
-      {/* Background Images */}
+      {/* Clean CSS Background */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://customer-assets.emergentagent.com/job_blue-silver-portal/artifacts/gydbclze_StockCake-Neon%20Grid%20Horizon_1744209820.jpg"
-          alt="Background"
-          className="w-full h-full object-cover opacity-40"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-blue-900/80 to-slate-800/90"></div>
+        <div className="w-full h-full bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"></div>
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `
+              linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+              linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '50px 50px'
+          }}></div>
+        </div>
       </div>
 
-      {/* Digital Gate Hero Image */}
+      {/* Left Side Hero Section */}
       <div className="absolute left-0 top-0 h-full w-1/2 z-10 hidden lg:block">
-        <img 
-          src="https://customer-assets.emergentagent.com/job_blue-silver-portal/artifacts/9jk9quv8_StockCake-Future%20Meets%20Human_1744201805.jpg"
-          alt="Digital Gate"
-          className="w-full h-full object-cover opacity-80"
-        />
+        <div className="w-full h-full bg-gradient-to-r from-blue-900/40 to-slate-800/60 flex items-center justify-center">
+          <div className="text-center text-white">
+            <div className="mb-8 relative">
+              <div className="w-32 h-32 mx-auto bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-2xl">
+                <div className="w-24 h-24 bg-gradient-to-br from-blue-300 to-blue-500 rounded-full flex items-center justify-center">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <Triangle className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 className="text-4xl font-bold mb-4">Digital Gate</h2>
+            <p className="text-xl text-blue-200 max-w-md">
+              Step into the future of digital experiences
+            </p>
+          </div>
+        </div>
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-900/20 to-slate-900/60"></div>
       </div>
 
       {/* Main Content */}
       <div className="relative z-20 w-full max-w-md lg:ml-auto lg:mr-16">
-        <Card className="backdrop-blur-xl bg-white/5 border-blue-300/20 shadow-2xl">
+        <Card className="bg-white/5 border-blue-300/20 shadow-2xl backdrop-blur-sm">
           <CardHeader className="text-center pb-8">
             {/* Logo */}
             <div className="flex justify-center mb-6">
               <div className="relative">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_blue-silver-portal/artifacts/y6uj4q5f_StockCake-Illuminated%20Geometric%20Triangle_1744202777.jpg"
-                  alt="Logo"
-                  className="w-16 h-16 rounded-lg shadow-lg"
-                />
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg shadow-lg flex items-center justify-center">
+                  <Triangle className="w-8 h-8 text-white" />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-transparent rounded-lg"></div>
               </div>
             </div>

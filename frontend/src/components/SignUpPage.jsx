@@ -120,12 +120,14 @@ const SignUpPage = () => {
       <div className="relative z-20 w-full max-w-md lg:ml-auto lg:mr-16">
         <Card className="bg-white/5 border-blue-300/20 shadow-2xl backdrop-blur-sm">
           <CardHeader className="text-center pb-8">
-            {/* Logo */}
+            {/* Your Triangle Logo */}
             <div className="flex justify-center mb-6">
               <div className="relative">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg shadow-lg flex items-center justify-center">
-                  <Triangle className="w-8 h-8 text-white" />
-                </div>
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_blue-silver-portal/artifacts/y6uj4q5f_StockCake-Illuminated%20Geometric%20Triangle_1744202777.jpg"
+                  alt="Illuminated Triangle Logo"
+                  className="w-16 h-16 rounded-lg shadow-lg"
+                />
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-transparent rounded-lg"></div>
               </div>
             </div>

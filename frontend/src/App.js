@@ -1,7 +1,9 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SignUpPage from "./components/SignUpPage";
+import WaitingList1 from "./components/WaitingList1";
+import WaitingList2 from "./components/WaitingList2";
+import WaitingList3 from "./components/WaitingList3";
 import { Toaster } from "./components/ui/toaster";
 
 function App() {
@@ -9,8 +11,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<SignUpPage />} />
-          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/" element={<WaitingList1 />} />
+          <Route path="/list1" element={<WaitingList1 />} />
+          <Route path="/list2" element={<WaitingList2 />} />
+          <Route path="/list3" element={<WaitingList3 />} />
         </Routes>
         <Toaster />
       </BrowserRouter>

@@ -1,11 +1,8 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import WaitingList1 from "./components/WaitingList1";
-import WaitingList2 from "./components/WaitingList2";
-import WaitingList3 from "./components/WaitingList3";
-import WaitingList4 from "./components/WaitingList4";
-import WaitingList5 from "./components/WaitingList5";
+import CleanWaitingList1 from "./components/CleanWaitingList1";
+import CleanWaitingList2 from "./components/CleanWaitingList2";
 import { Toaster } from "./components/ui/toaster";
 
 function App() {
@@ -13,12 +10,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<WaitingList1 />} />
-          <Route path="/list1" element={<WaitingList1 />} />
-          <Route path="/list2" element={<WaitingList2 />} />
-          <Route path="/list3" element={<WaitingList3 />} />
-          <Route path="/list4" element={<WaitingList4 />} />
-          <Route path="/list5" element={<WaitingList5 />} />
+          <Route path="/" element={<CleanWaitingList1 />} />
+          <Route path="/clean1" element={<CleanWaitingList1 />} />
+          <Route path="/clean2" element={<CleanWaitingList2 />} />
         </Routes>
         <Toaster />
       </BrowserRouter>
